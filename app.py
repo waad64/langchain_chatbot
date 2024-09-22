@@ -15,7 +15,7 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 #web page settings: 
 st.set_page_config(page_title="streaming Bot", page_icon="🤖")
-st.title("Bidgenie chatbot 🤖")
+st.title("Coco chatbot 🤖")
 
 #getting the response:
 def get_response(query, chat_history):
