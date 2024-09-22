@@ -1,37 +1,61 @@
-**LangChain Chatbot**
+# Bidgenie Chatbot
 
-   *Overview* 
-This repository contains a chatbot developed using the LangChain framework, powered by OpenAI's language models. The chatbot is designed to facilitate natural conversations and provide context-aware responses.
+## Overview
 
-   *Features*
-Natural Language Understanding: Engages users in meaningful conversations.
-Contextual Responses: Maintains context across multiple exchanges.
-*Customizable: Easily modify the chatbot for specific use cases.*
+This repository contains a chatbot application built using Streamlit and the LangChain framework, powered by OpenAI's API. The Coco chatbot is designed to facilitate interactive conversations and provide helpful responses based on the context of the chat history.
 
-   *Prerequisites*
-  -Python 3.7 or higher
-  -An OpenAI API key
+## Features
 
-  *Installation*
-  Clone the repository:
-   Copy
-git clone https://github.com/yourusername/langchain-chatbot.git
-cd langchain-chatbot
-Install the required packages:
+- **Interactive UI**: User-friendly interface built with Streamlit.
+- **Contextual Conversations**: Maintains chat history for coherent interactions.
+- **Real-time Responses**: Utilizes OpenAI's language model for instant replies.
 
-Copier
-pip install -r requirements.txt
-Set up your OpenAI API key:
+## Prerequisites
 
-Create a .env file in the root directory and add your API key:
+- Python 3.7 or higher
+- An OpenAI API key
+- Required Python packages (listed in `requirements.txt`)
 
-Copier
-OPENAI_API_KEY=your_openai_api_key
-Usage
-Run the chatbot:
+## Installation
 
-Copier
-python app.py
-Interact with the chatbot through the command line. Type your messages and receive responses in real-time.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/waad64/langchain_chatbot.git
+   cd langchain_chatbot
+   ```
+
+2. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up your OpenAI API key:
+
+   Create a `.env` file in the root directory and add your API key:
+
+   ```plaintext
+   OPENAI_API_KEY=your_openai_api_key
+   ```
+
+## Usage
+
+Run the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+Open your web browser and navigate to `http://localhost:8501` to interact with the chatbot.
+
+## Code Explanation
+
+- **Imports**: The code imports necessary libraries, including Streamlit, LangChain components, and environment variable management.
+- **Environment Variables**: Loads the OpenAI API key from a `.env` file.
+- **Chat History**: Uses Streamlit's session state to maintain chat history.
+- **Response Generation**: Defines a function that constructs prompts and generates responses using OpenAI's language model.
+- **User Interaction**: Handles user input and displays chat messages in the Streamlit interface.
+
 
 
