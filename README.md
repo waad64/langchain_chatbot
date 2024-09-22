@@ -1,4 +1,4 @@
-# Bidgenie Chatbot
+# Coco Chatbot
 
 ## Overview
 
